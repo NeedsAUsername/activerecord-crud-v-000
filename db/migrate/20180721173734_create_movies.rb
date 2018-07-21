@@ -1,5 +1,7 @@
 class CreateMovies < ActiveRecord::Migration
   def change
-      create_table :movies 
+      create_table :movies do |t|
+          t.string :title
+          t.datetime
   end
 end
